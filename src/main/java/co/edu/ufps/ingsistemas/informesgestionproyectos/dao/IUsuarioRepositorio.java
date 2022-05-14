@@ -1,9 +1,11 @@
 package co.edu.ufps.ingsistemas.informesgestionproyectos.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import co.edu.ufps.ingsistemas.informesgestionproyectos.entities.Usuario;
 
-public interface UsuarioRepositorio extends JpaRepository<Usuario, Integer> {
+@Repository
+public interface IUsuarioRepositorio extends JpaRepository<Usuario, Integer> {
 
 }
